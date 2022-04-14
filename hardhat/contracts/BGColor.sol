@@ -11,8 +11,8 @@ contract BGColor {
     string public color;
     event colorHasChanged(string newColor);
 
-    constructor(){
-        color = '#ffffff';
+    constructor(string memory _color){
+        color = _color;
     }
 
     /**
