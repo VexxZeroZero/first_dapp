@@ -14,7 +14,7 @@ export default function Home(props) {
       <link rel="icon" href="/favicon.ico" />
     </Head>
     <div className="container" style={{background:bgColor}}>
-      <ChangeBG/>
+      <ChangeBG bgColor={bgColor} setBgColor={setBgColor}/>
     </div>
   </>
 }

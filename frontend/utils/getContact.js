@@ -14,8 +14,9 @@ const getContract = async (use_metamask = false) => {
     }else{
         signerOrProvider = new ethers.providers.JsonRpcProvider(process.LOCAL_BLOCKCHAIN_RPC_URL);
     }
+    console.log(process.env.NEXT_PUBLIC_CONTRACT_ADDRESS);
     const contract = new Contract(
-        process.env.CONTRACT_ADDRESS,
+        process.env.NEXT_PUBLIC_CONTRACT_ADDRESS,
         BGColor.abi,
         signerOrProvider
     );
